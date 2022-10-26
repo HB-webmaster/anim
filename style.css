@@ -1,0 +1,254 @@
+.inner,  .inner-page2,
+.inner-page3 {
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.box { 
+    /* position: absolute; */
+    height: 250px;
+    width: 30%;
+    /* background-color: #222; */
+    perspective-origin: center;
+    /* left: 0;
+    top: 0; */
+}
+.image {
+    
+    width: 100%;
+    height: 100%;
+}
+.inner .one {
+    animation-name: first-box;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: 1;
+}
+.inner .two {
+    width: 0;
+    animation-name: sec-box;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+.inner .three {
+    width: 0;
+    animation-name: third-box;
+    animation-duration: 1.5s;
+    animation-delay: 1.7s;
+    animation-fill-mode: forwards;
+}
+.inner .four {
+    height: 0;
+    animation-name: fourth-box;
+    animation-duration: 1.5s;
+    animation-delay: 3.0s;
+    animation-fill-mode: forwards;
+}
+.inner .five {
+    height: 0;
+    animation-name: fifth-box;
+    animation-duration: 1.5s;
+    animation-delay: 4.0s;
+    animation-fill-mode: forwards;
+}
+.inner .six {
+    height: 0;
+    animation-name: sixth-box;
+    animation-duration: 1.5s;
+    animation-delay: 4.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes first-box {
+    0%{
+        opacity: 0;
+        width: 0px;
+        height: 0px;
+        
+    }
+    100%{
+        height: 250px;
+        background-color: #125467;
+        width: 100%;
+        opacity: 1;
+        
+    }
+}
+@keyframes sec-box {
+    0%{
+        opacity: 0;
+        width: 0;
+    }
+    100%{
+        width: 100%;
+        opacity: 1;
+    }
+}
+@keyframes third-box {
+    0%{
+        opacity: 0;
+        width: 0;
+    }
+    100%{
+        width: 100%;
+        opacity: 1;
+    }
+}
+@keyframes fourth-box {
+    0%{
+        opacity: 0;
+        height: 0;
+    }
+    100%{
+        height: 100%;
+        opacity: 1;
+    }
+}
+@keyframes fifth-box {
+    0%{
+        opacity: 0;
+        height: 0;
+    }
+    100%{
+        height: 100%;
+        opacity: 1;
+    }
+}
+@keyframes sixth-box {
+    0%{
+        opacity: 0;
+        height: 0;
+        width: 0;
+    }
+    100%{
+       height: 100%;
+       width: 100%;
+       opacity: 1;
+    }
+}
+
+.inner-page2 .one {
+    animation-name: first-box-1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    /* animation-delay: 1.5s; */
+    width: 0;
+    /* transform: translateX(80%); */
+    /* width: 0; */
+}
+.inner-page2 .two {
+    animation-name: first-box-1;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+    width: 0;
+    /* transform: translateX(80%); */
+    /* width: 0; */
+}
+.inner-page2 .three {
+    animation-name: first-box-1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    width: 0;
+    animation-delay: 0.4s;
+    /* transform: translateX(80%); */
+    /* width: 0; */
+}
+.inner-page2 .four {
+    animation-name: first-box-1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.1s;
+    width: 0;
+    /* transform: translateX(80%); */
+    /* width: 0; */
+}
+.inner-page2 .five {
+    animation-name: first-box-1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    width: 0;
+    animation-delay: 0.2s;
+    /* transform: translateX(80%); */
+    /* width: 0; */
+}
+.inner-page2 .six {
+    animation-name: first-box-1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    width: 0;
+    animation-delay: 0.4s;
+    /* transform: translateX(80%); */
+    /* width: 0; */
+}
+@keyframes first-box-1 {
+    0%{
+       border-radius: 100%;
+       transform: rotate(0deg); 
+       opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        border-radius: 0;
+        transform: rotate(360deg);
+        width: 100%;
+    }
+}
+.inner-page3 .one {
+    animation-name: first-box-3;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    /* transform: perspective(400px) rotateX(90deg); */
+
+}
+.inner-page3 .two {
+    animation-name: first-box-3;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+.inner-page3 .three {
+    animation-name: first-box-3;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    opacity: 0;
+}
+.inner-page3 .four {
+    animation-name: first-box-3;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    opacity: 0;
+}
+.inner-page3 .five {
+    animation-name: first-box-3;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+    opacity: 0;
+}
+.inner-page3 .six {
+    animation-name: first-box-3;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+    opacity: 0;
+}
+@keyframes first-box-3 {
+    0%{
+       opacity: 0;
+       
+    }
+    100%{
+       /* transform: rotateX(0deg);  */
+      opacity: 1;
+    }
+}
